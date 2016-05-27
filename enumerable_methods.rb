@@ -29,8 +29,6 @@ end
 def add_hash_with_each(hash)
   sum = 0
   hash.each { |key,value| sum += value }
-  hash.values
-  hash.keys
   sum
 end
 
@@ -39,9 +37,7 @@ def add_hash_with_map_reduce(hash)
 end
 
 def add_hash_with_reduce(hash)
-  hash.reduce(0) { |sum,item|
-    sum += item.last
-  }
+  hash.reduce(0) { |sum,item| sum += item.last }
 end
 
 def sort_array(array)
@@ -49,10 +45,23 @@ def sort_array(array)
 end
 
 def odd_numbers(array)
-  # new_array = []
-  # array.each do |num|
-  #   new_array << num if num.odd?
-  # end
-  # new_array
-  array.select{|num| num.odd? }.sort{|a,b| a <=> b }.select{|num| num < 25 }
+  puts odd_numbers_with_each(array)
+  puts odd_numbers_with_select(array)
+  p odd_numbers_with_reject(array)
+end
+
+def odd_numbers_with_each(array)
+  new_array = []
+  array.each do |num|
+    new_array << num if num.odd?
+  end
+  new_array
+end
+
+def odd_numbers_with_select(array)
+  array.select{|num| num.odd? }
+end
+
+def odd_numbers_with_reject(array)
+  array.reject{|num| num.even? }
 end
