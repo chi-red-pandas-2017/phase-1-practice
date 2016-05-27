@@ -37,23 +37,28 @@ end
 
 kevin = Teacher.new(
   first_name: 'Kevin', last_name: 'Solorio', years_experience: 4,
-  ukulele_skill: :novice, nunchuck_skill: :newb, kitty_love: :loves_cats
+  ukulele_skill: :novice, nunchuck_skill: :newb, kitty_love: :loves_cats,
+  location: "San Diego"
 )
 mark = Teacher.new(
   first_name: 'Mark', last_name: 'Siemers', years_experience: 0,
-  ukulele_skill: :beginner, nunchuck_skill: :napolean_dynamite, kitty_love: :tolerance
+  ukulele_skill: :beginner, nunchuck_skill: :napolean_dynamite, kitty_love: :tolerance,
+  location: "San Diego"
 )
 mike = Teacher.new(
   first_name: 'Mike', last_name: 'Busch', years_experience: 3,
-  ukulele_skill: :hawaiian_shred_master, nunchuck_skill: :novice, kitty_love: :tolerance
+  ukulele_skill: :hawaiian_shred_master, nunchuck_skill: :novice, kitty_love: :tolerance,
+  location: "Chicago"
 )
 matt = Teacher.new(
   first_name: 'Matt', last_name: 'Baker', years_experience: 2,
-  ukulele_skill: :intermediate, nunchuck_skill: :michelangelo, kitty_love: :hatred
+  ukulele_skill: :intermediate, nunchuck_skill: :michelangelo, kitty_love: :hatred,
+  location: "Chicago"
 )
 jen = Teacher.new(
   first_name: 'Jen', last_name: 'Gilbert', years_experience: 1,
-  ukulele_skill: :advanced, nunchuck_skill: :novice, kitty_love: :cat_lady
+  ukulele_skill: :advanced, nunchuck_skill: :novice, kitty_love: :cat_lady,
+  location: "San Francisco"
 )
 teachers = [kevin, mark, mike, matt, jen]
 if false
@@ -83,4 +88,22 @@ puts 'teachers_ordered_by_ukulele_skill'
 puts teachers_ordered_by_ukulele_skill(teachers)
 puts 'teachers_names_ordered_by_ukulele_skill'
 puts teachers_names_ordered_by_ukulele_skill(teachers)
+
+puts '-' * 30
+puts 'teachers_from_san_diego'
+puts teachers_from_san_diego(teachers)
+puts 'teachers_names_from_san_diego'
+puts teachers_names_from_san_diego(teachers)
+
+puts '-' * 30
+puts 'teachers_from_san_diego_ordered_by_last_name'
+puts teachers_from_san_diego_ordered_by_last_name(teachers)
+puts 'teachers_names_from_san_diego_ordered_by_last_name'
+puts teachers_names_from_san_diego_ordered_by_last_name(teachers)
+
+puts '-' * 30
+puts 'teachers_ordered_by_nunchuck_skills_then_ukulele_skills'
+puts teachers_ordered_by_nunchuck_skills_then_ukulele_skills(teachers)
+puts 'teachers_names_ordered_by_nunchuck_skills_then_ukulele_skills'
+puts teachers_names_ordered_by_nunchuck_skills_then_ukulele_skills(teachers)
 end
