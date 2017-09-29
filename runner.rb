@@ -45,13 +45,13 @@ mark = Teacher.new(
   ukulele_skill: :beginner, nunchuck_skill: :napolean_dynamite, kitty_love: :tolerance,
   location: "San Diego"
 )
-mike = Teacher.new(
-  first_name: 'Mike', last_name: 'Busch', years_experience: 3,
+duke = Teacher.new(
+  first_name: 'Duke', last_name: 'Greene', years_experience: 3,
   ukulele_skill: :hawaiian_shred_master, nunchuck_skill: :novice, kitty_love: :tolerance,
   location: "Chicago"
 )
-matt = Teacher.new(
-  first_name: 'Matt', last_name: 'Baker', years_experience: 2,
+alyssa = Teacher.new(
+  first_name: 'Alyssa', last_name: 'Diaz', years_experience: 5,
   ukulele_skill: :intermediate, nunchuck_skill: :michelangelo, kitty_love: :hatred,
   location: "Chicago"
 )
@@ -60,7 +60,7 @@ jen = Teacher.new(
   ukulele_skill: :advanced, nunchuck_skill: :novice, kitty_love: :cat_lady,
   location: "San Francisco"
 )
-teachers = [kevin, mark, mike, matt, jen]
+teachers = [kevin, mark, duke, alyssa, jen]
 if false
 puts '-' * 30
 puts "teachers_with_over_one_year_experience"
