@@ -13,6 +13,7 @@ add_array(one_to_ten_array) # => 55
 # What enumerable method(s) can you use?
 add_hash(one_to_ten_hash) # => 55
 
+
 # What enumerable method(s) can you use?
 puts sort_array(array_to_be_sorted).to_s
 
@@ -37,52 +38,50 @@ end
 
 kevin = Teacher.new(
   first_name: 'Kevin', last_name: 'Solorio', years_experience: 4,
-  ukulele_skill: :novice, nunchuck_skill: :newb, kitty_love: :loves_cats,
+  ukulele_skill: :novice, nunchuck_skill: :newb, kitten_love: :loves_cats,
   location: "San Diego"
 )
 mark = Teacher.new(
   first_name: 'Mark', last_name: 'Siemers', years_experience: 0,
-  ukulele_skill: :beginner, nunchuck_skill: :napolean_dynamite, kitty_love: :tolerance,
+  ukulele_skill: :beginner, nunchuck_skill: :napolean_dynamite, kitten_love: :tolerance,
   location: "San Diego"
 )
 duke = Teacher.new(
   first_name: 'Duke', last_name: 'Greene', years_experience: 3,
-  ukulele_skill: :hawaiian_shred_master, nunchuck_skill: :novice, kitty_love: :tolerance,
+  ukulele_skill: :hawaiian_shred_master, nunchuck_skill: :novice, kitten_love: :tolerance,
   location: "Chicago"
 )
 alyssa = Teacher.new(
   first_name: 'Alyssa', last_name: 'Diaz', years_experience: 5,
-  ukulele_skill: :intermediate, nunchuck_skill: :michelangelo, kitty_love: :hatred,
+  ukulele_skill: :intermediate, nunchuck_skill: :michelangelo, kitten_love: :hatred,
   location: "Chicago"
 )
 jen = Teacher.new(
   first_name: 'Jen', last_name: 'Gilbert', years_experience: 1,
-  ukulele_skill: :advanced, nunchuck_skill: :novice, kitty_love: :cat_lady,
+  ukulele_skill: :advanced, nunchuck_skill: :novice, kitten_love: :cat_lady,
   location: "San Francisco"
 )
 teachers = [kevin, mark, duke, alyssa, jen]
-if false
+
 puts '-' * 30
 puts "teachers_with_over_one_year_experience"
 puts teachers_with_over_one_year_experience(teachers)
-
 puts 'teacher_names_with_over_one_year_experience'
 puts teacher_names_with_over_one_year_experience(teachers)
-
 puts '-' * 30
 puts 'all_teachers_who_dont_hate_cats'
 puts all_teachers_who_dont_hate_cats(teachers)
 
+
 puts 'all_teacher_names_who_dont_hate_cats'
 puts all_teacher_names_who_dont_hate_cats(teachers)
-
 puts '-' * 30
 puts 'teachers_ordered_by_ukulele_skill'
 puts teachers_ordered_by_ukulele_skill(teachers)
 
+
 puts 'teachers_names_ordered_by_ukulele_skill'
 puts teachers_names_ordered_by_ukulele_skill(teachers)
-
 puts '-' * 30
 puts 'teachers_ordered_by_ukulele_skill'
 puts teachers_ordered_by_ukulele_skill(teachers)
@@ -106,4 +105,5 @@ puts 'teachers_ordered_by_nunchuck_skills_then_ukulele_skills'
 puts teachers_ordered_by_nunchuck_skills_then_ukulele_skills(teachers)
 puts 'teachers_names_ordered_by_nunchuck_skills_then_ukulele_skills'
 puts teachers_names_ordered_by_nunchuck_skills_then_ukulele_skills(teachers)
+if false
 end

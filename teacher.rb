@@ -9,11 +9,15 @@ class Teacher
   def initialize(args)
     @first_name = args[:first_name]
     @last_name = args[:last_name]
-    self.years_experience = args.fetch():years_experience]
+    self.years_experience = args.fetch(:years_experience)
     self.ukulele_skill = args.fetch(:ukulele_skill, :beginner)
     self.nunchuck_skill = args.fetch(:nunchuck_skill, :newb)
     @kitten_love = args.fetch(:kitten_love, :hatred)
     self.location = args[:location]
+  end
+
+  def to_s
+    inspect
   end
 
 end
